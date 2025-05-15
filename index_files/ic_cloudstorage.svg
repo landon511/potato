@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>图标/ic_cloudstorage</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#73D8FA" offset="0%"></stop>
+            <stop stop-color="#71AFF9" offset="100%"></stop>
+        </linearGradient>
+        <path d="M41.0932823,27.0185629 C40.5459293,22.5395045 36.8752876,19.4594595 32.4325993,19.4594595 C27.989911,19.4594595 24.3188688,22.5395713 23.7715158,27.0151595 C19.5065403,27.5549048 16.2162162,30.9938458 16.2162162,35.6759092 C16.2162162,39.3212587 19.7094787,42.7674737 24.1667151,43.1332432 C25.167059,43.1332432 27.9642183,43.1332432 29.2145481,43.1259693 C29.6166877,43.1297731 35.2481771,43.1297731 35.6468465,43.1297731 C37.690311,43.1332432 39.0713062,43.1297731 40.6946796,43.1297731 C45.1553862,42.7636032 48.6486486,39.3212587 48.6486486,35.6757758 C48.6485819,30.9977163 45.3621283,27.5549048 41.0932823,27.0185629" id="path-2"></path>
+        <filter x="-21.6%" y="-21.1%" width="143.2%" height="159.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.489346591   0 0 0 0 0.782077845   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="图标/ic_cloudstorage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分组-2">
+            <circle id="椭圆形" fill="#EAF9FF" cx="80" cy="80" r="80"></circle>
+            <g id="分组" transform="translate(47.567568, 47.567568)">
+                <path d="M61.6216216,14.1891892 L35.6756757,0.810810811 C34.4594595,0.405405405 33.6486486,0 32.4324324,0 C31.2162162,0 30.4054054,0.405405405 29.1891892,0.810810811 L3.24324324,14.1891892 C1.21621622,15 0,17.027027 0,19.4594595 L0,45.4054054 C0,47.4324324 1.21621622,49.8648649 3.24324324,50.6756757 L29.1891892,63.6486486 C30.4054054,64.4594595 31.2162162,64.8648649 32.4324324,64.8648649 C33.6486486,64.8648649 34.4594595,64.4594595 35.6756757,64.0540541 L61.6216216,51.0810811 C63.6486486,49.8648649 64.8648649,47.8378378 64.8648649,45.8108108 L64.8648649,19.4594595 C64.8648649,17.027027 63.6486486,15 61.6216216,14.1891892 Z" id="路径" fill="url(#linearGradient-1)"></path>
+                <g id="路径" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="#FFFFFF" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

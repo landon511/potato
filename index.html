@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://potatom.vercel.app/ -->
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
+    <title>Potcto</title>    
+    <link rel="stylesheet" href="./index_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./index_files/animate.css">
+    <link rel="stylesheet" href="./index_files/main.css">    
+</head>
+<body style="background-color:#fff;width: auto">
+
+<div style="width: 100%;min-width: 1200px;">
+    <input type="hidden" id="usrck" value="1">
+    <input type="hidden" id="localelang" value="en">
+    <link href="./index_files/upload.css" rel="stylesheet" type="text/css">
+    
+    
+        <script src="./index_files/uploadImg.js.下载"></script>
+    
+    
+    <div class="ieshow">Your browser version is too low, some content may not display properly, please download the
+        latest version!</div>
+    <nav class="navbar  fixed-top" style="position: relative;padding-left: 20px;">
+        <div class="container" style="min-width: 1200px;padding: 0px;">
+            <a href="https://potatom.vercel.app/" style="background: url(&#39;static/image/ic_header_logo.svg&#39;);height: 42px;width: 206px;    background-repeat: no-repeat !important;">
+            </a>
+            <nav class="my-2 my-md-0 mr-md-3" style=" margin-left: 134px;">
+                <a class="nav-item nav-active" href="https://potatom.vercel.app/">
+                    <span>首页</span>
+                </a>
+
+                <a class="nav-item" href="https://hk-cdn02.oss-cn-hongkong.aliyuncs.com/Potato_Desktop2.37.zip">
+                    <span>应用</span>
+                </a>
+                <a class="nav-item" href="https://potatom.vercel.app/api">
+                    <span>开发者</span>
+                </a>
+                <a class="nav-item" href="https://potatom.vercel.app/faq">
+                    <span>问答</span>
+                </a>
+                <a class="nav-item" href="https://potatom.vercel.app/privacy">
+                    <span>隐私 </span>
+                </a>
+
+                <a class="nav-item" href="https://potatom.vercel.app/news">
+                    <span>新闻</span>
+                </a>
+            </nav>
+
+            <div class="nav-right">
+                <select class="lanselect" id="lanselect">
+                    <option value="zh" selected="selected">简体中文</option>
+                    <option value="en">English</option>
+                    <option value="zh_TW">繁體中文
+                    </option>
+                </select>
+                <span style="border: 1px solid #E5E5E5;height: 14px;width: 1px;margin-left: 14px;display: inline-block;"></span>
+                <a class="twitter-nav" href="https://potatom.vercel.app/#" target="_blank"><i class="iconfont" style="font-size: 20px;"></i></a>
+            </div>
+
+
+            <div class="rbar">
+
+                <a id="toTop" class="feedback aa1" style="display: none">
+                    <div class="a1"> <i class="iconfont" style="font-size: 28px;margin: 0;"></i></div>
+                </a>
+
+                <a class="feedback aa1 suga" href="javascript:void(0)">
+                    <div class="feedbackL a">意见反馈</div>
+                    <div class="a1"> <i class="iconfont" style="font-size: 28px;margin: 0;"></i></div>
+                </a>
+                <a class="feedback bb1" target="_blank" href="https://ptcc.in/Support_Bot?lang=zh">
+                    <div class="feedbackL b">客服</div>
+                    <div class="a1"> <i class="iconfont" style="font-size: 28px"></i></div>
+                </a>
+
+
+                <a class="feedback aa1" href="https://potatom.vercel.app/news">
+                    <div class="feedbackL a">新闻</div>
+                    <div class="a1"> <i class="iconfont" style="font-size: 28px;margin: 0;"></i></div>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    <form>
+        <span id="errocode" style="display: none">国家代码无效</span>
+
+        <div class="suggest" id="suggestad" style="display: none">
+            <div class="sgtitle">
+                <span style="float: left;width: 40%">意见反馈</span>
+                <span id="jian" style="float: right;width: 40%;text-align: right;font-weight: 800;cursor: pointer;">一</span>
+            </div>
+            <div class="sgcontent">
+                <p style="margin-bottom: 10px;">输入您遇到的问题</p>
+                <textarea id="content" name="content" placeholder="请输入您要反馈的问题"></textarea>
+                <div class="tsspan" id="tsspan"> <span id="textCount" style="color: #333333;">0</span><span style="color: #cccccc;">/520</span></div>
+                <p style="margin-top: 20px">输入你的号码</p>
+            </div>
+            <div class="sgselect-div">
+                <div class="selectdiv">
+                    <div style="padding: 13px 20px 13px 20px;overflow: auto" id="ckctry">
+                        <div style="display: inline-block;float: left;width: 50%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;" id="citydiv"></div>
+                        <div style="display: inline-block;float: right;width: 40%;text-align: right">
+                            <span id="citynum"></span> <span class="iconfont" id="downioc" style="font-size: 14px;color: #cccccc;margin-left: 10px"></span>
+                            <span class="iconfont " id="upioc" style="font-size: 14px;color: #cccccc;margin-left: 10px;display: none"></span>
+                        </div>
+                    </div>
+                    <div class="hxdiv"></div>
+                </div>
+                <div id="selectctry" class="selectctry" style="display: none;"> </div>
+
+                <div class="selectphone">
+                    <div style="display: inline-block;float: left;height:47px;border-right: 1px solid #CCCCCC;line-height: 48px;padding-left: 20px">
+                        +&nbsp;<input id="countryCode" class="phonebtn" style="width: 47px;height:46px;margin-right: 10px;float: right" type="text" value="" oninput="value=value.replace(/[^\d]/g,&#39;&#39;)">
+                    </div>
+                    <div style="display: inline-block;float: right;width: 200px;height: 48px;">
+                        <input id="phone" class="phonebtn" type="text" value="" oninput="value=value.replace(/[^\d]/g,&#39;&#39;)" placeholder="输入你的号码">
+                    </div>
+                </div>
+
+            </div>
+            <p style="margin-top: 20px;margin-left: 20px">上传图片</p>
+            <div style="margin-top: 10px;margin-left:20px;overflow-y: hidden" id="fileWrap">
+                <div id="imgBox"></div>
+                <div id="img-line">
+                    <img src="./index_files/btn_addphoto.png" class="add-img">
+                    <input type="file" id="file" multiple="" accept="image/png,image/jpg,image/gif,image/jpeg">
+                </div>
+            </div>
+            <p style="margin-top: 10px;margin-left: 20px;margin-right: 20px;" class="wariningp"><span style="color: #F04646;">*</span><span>最多可以上传2张图片，每张图片不能超过3M.</span></p>
+            <p class="api-text3">
+                <a class="tjsuggest" href="https://potatom.vercel.app/#" id="submitBtn">
+                    <span>提交</span>
+                </a>
+            </p>
+
+            <p class="api-text3" style="    margin-top: 20px;">
+                <a href="https://potatom.vercel.app/faq">常见问题</a>
+            </p>
+
+        </div>
+    </form>
+</div>
+
+<div class="topbanner" style="width: 100%;height: auto;overflow: hidden;min-width: 1200px;padding-left: 20px;">
+    <div style="width: 1200px;margin: auto;height: auto;overflow: hidden;margin-top: 40px;">
+
+        <div style="float: left;width: 50%;padding-top: 30px;" class="indextxt">
+            <p class="text1" style="font-size: 40px">简易・安全</p>
+            <p class="text1" style="padding-top: 0px;font-size: 40px">可靠的消息发送</p>
+            <!--<p class="text2" style="margin-top: 20px;"> <span style="color: #007EE5;font-size:24px;" id="useuser" th:text="${#numbers.formatInteger(registerCount, 0, 'COMMA')}">125,310,893</span> <span style="color: #151515;font-size: 24px;" th:text="#{DownloadByPeople}">人在使用</span></span></p>-->
+            <p class="text2" style="font-size: 16px;">使用 POTATC，您可通过手机免费在全世界快速、简便、且安全地收发消息和通话。</p>
+            <p class="text5" style="margin-top: 1.2%">
+                </p><ul style="width: 50%;float: left;padding-left: 0px;">
+                    <li>
+                        <a href="https://hk-cdn02.oss-cn-hongkong.aliyuncs.com/Potato_Desktop2.37.zip" class="home-btn">
+                            <div style="float: left">
+                                <i class="iconfont" style="font-size: 24px;margin-left: 48px;"></i>
+                            </div>
+                            <div>
+                                <span style="font-size: 16px;margin-left: 6px;">Android</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="download" href="https://hk-cdn02.oss-cn-hongkong.aliyuncs.com/Potato_Desktop2.37.zip" target="_blank" class="home-btn">
+                            <div style="float: left">
+                                <i class="iconfont" style="font-size: 24px;margin-left: 48px;"></i>
+                            </div>
+                            <div style="float: left">
+                            <span style="font-size: 16px;margin-left: 6px;">iPhone</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://hk-cdn02.oss-cn-hongkong.aliyuncs.com/Potato_Desktop2.37.zip" class="home-btn" target="_blank">
+                            <div style="float: left">
+                            <i class="iconfont" style="font-size: 24px;margin-left: 48px;"></i>
+                            </div>
+                            <div style="float: left">
+                            <span style="font-size: 16px;margin-left:6px;">GitHub</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul style="width: 50%;float: left;padding-left: 0px;overflow: hidden;">
+                    <li>
+                        <a href="https://hk-cdn02.oss-cn-hongkong.aliyuncs.com/Potato_Desktop2.37.zip" class="home-btn">
+                            <div style="float: left">
+                            <i class="iconfont" style="font-size: 24px;margin-left: 48px;"></i>
+                            </div>
+                            <div style="float: left">
+                            <span style="font-size: 16px;margin-left: 6px;">Windows</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://hk-cdn02.oss-cn-hongkong.aliyuncs.com/Potato_Desktop2.37.zip" class="home-btn">
+                            <div style="float: left">
+                                <i class="iconfont" style="font-size: 24px;margin-left: 48px;"></i>
+                            </div>
+                            <div style="float: left">
+                                <span style="font-size: 16px;margin-left: 6px;">macOS</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li style="    margin-top: 0px;">
+                        <a href="https://potatom.vercel.app/apps" class="home-btn" style="float: left;">
+                            <span style="font-size: 16px;width: 200px;display: block;margin: 0px auto auto;text-align: center;">查看更多</span>
+                        </a>
+                    </li>
+                </ul>
+            <p>
+        </p></div>
+        <div style="float: left;width: 50%;overflow: auto;">
+            <img src="./index_files/banner_home1.png" style="height: 540px;float: right;">
+        </div>
+    </div>
+</div>
+
+<div id="clties" class="ydfdiv">
+    <div class="text1">优点和特色</div>
+</div>
+
+<div id="cltiesf" class="ydfdivf" style="display: none">
+    <div class="text1">优点和特色</div>
+</div>
+
+<div class="advantages" style="min-width: 1200px">
+
+    <div class="yhdiv">
+        <div class="ctdiv">
+            <div class="tsdiv">
+                <img src="./index_files/ic_safety.svg">
+                <p class="txttl">安全</p>
+                <p class="txtdes">采用最先进的加密技术保障信息安全</p>
+            </div>
+            <div class="tsdiv" style="margin-left: 60px">
+                <img src="./index_files/ic_cloudstorage.svg">
+                <p class="txttl">云端</p>
+                <p class="txtdes">支持多端登录，消息自动同步</p>
+            </div>
+
+            <div class="tsdiv" style="margin-left: 60px">
+                <img src="./index_files/ic_circleoffriends.svg">
+                <p class="txttl">朋友圈</p>
+                <p class="txtdes">分享和发布动态</p>
+            </div>
+        </div>
+
+        <div class="ctdiv">
+            <div class="tsdiv">
+                <img src="./index_files/ic_powerful.svg">
+                <p class="txttl">自由</p>
+                <p class="txtdes">对消息和文件大小没有限制</p>
+            </div>
+            <div class="tsdiv" style="margin-left: 60px">
+                <img src="./index_files/ic_rapid.svg">
+                <p class="txttl">快速</p>
+                <p class="txtdes">为用户提供超快的连接和使用体验</p>
+            </div>
+            <div class="tsdiv" style="margin-left: 60px">
+                <img src="./index_files/ic_wallet.svg">
+                <p class="txttl">钱包</p>
+                <p class="txtdes">支持多币种管理、支付及红包</p>
+            </div>
+        </div>
+
+        <div class="ctdiv">
+            <div class="tsdiv">
+                <img src="./index_files/ic_permission.svg">
+                <p class="txttl">机器人</p>
+                <p class="txtdes">通过API自由创建机器人</p>
+            </div>
+            <div class="tsdiv" style="margin-left: 60px">
+                <img src="./index_files/ic_grouping.svg">
+                <p class="txttl">群组</p>
+                <p class="txtdes">创建多达20万人的超级群组</p>
+            </div>
+            <div class="tsdiv" style="margin-left: 60px">
+                <img src="./index_files/ic_privacy.svg">
+                <p class="txttl">隐私</p>
+                <p class="txtdes">信息加密可自定义销毁</p>
+            </div>
+        </div>
+
+        <div class="ctdiv">
+            <div class="tsdiv">
+                <img src="./index_files/ic_open.svg">
+                <p class="txttl">开放</p>
+                <p class="txtdes">多元、自由的平台</p>
+            </div>
+            <div class="tsdiv" style="margin-left: 60px">
+                <img src="./index_files/ic_taste.svg">
+                <p class="txttl">趣味</p>
+                <p class="txtdes">发现感兴趣的东西、遇到有趣的人</p>
+            </div>
+            <div class="tsdiv" style="margin-left: 60px">
+                <img src="./index_files/ic_video.svg">
+                <p class="txttl">视频(通话)</p>
+                <p class="txtdes">免费体验高质量音视频通话</p>
+            </div>
+        </div>
+
+        <div class="ctdiv" style="margin-bottom: 80px">
+            <div class="tsdiv">
+                <img src="./index_files/ic_peoplenearby.svg">
+                <p class="txttl">附近的人</p>
+                <p class="txtdes">基于地理位置发现好友</p>
+            </div>
+            <div class="tsdiv" style="margin-left: 60px">
+                <img src="./index_files/ic_applets.svg">
+                <p class="txttl">小程序</p>
+                <p class="txtdes">无需下载安装，即可体验</p>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+    <div style="width: 100%;padding-left: 20px;">
+        <div class="home-privacy" id="home-privacy">
+            <div class="botmfdiv">
+                <div class="botmdiv">
+                    <ul>
+                        <li class="li-title">手机应用</li>
+                        <li> <a href="https://potatom.vercel.app/changelog#mAndroid">Android</a></li>
+                        <li><a href="https://potatom.vercel.app/changelog#miOS">iOS</a></li>
+                        <li><a href="https://potatom.vercel.app/#" target="_blank">GitHub</a></li>
+                        <li><a href="https://potatom.vercel.app/#" target="_blank">Google Play</a></li>
+                    </ul>
+                </div>
+
+                <div class="botmdiv" style="margin-left: 160px">
+                    <ul>
+                        <li class="li-title">桌面应用</li>
+                        <li><a href="https://potatom.vercel.app/#">macOS</a></li>
+                        <li><a href="https://hk-cdn02.oss-cn-hongkong.aliyuncs.com/Potato_Desktop2.37.zip">Windows</a></li>
+                        <li><a href="https://potatom.vercel.app/#">Linux</a></li>
+                        <li><a href="https://potatom.vercel.app/#" target="_blank">白皮书</a></li>
+                        <!--                    <li><a href="/changelog#mGitHub">GitHub</a></li>-->
+                    </ul>
+                </div>
+
+                <div class="botmdiv" style="margin-left: 160px;width: 180px">
+                    <ul>
+                        <li class="li-title">官方社群</li>
+                        <li><a href="https://potatom.vercel.app/#" target="_blank">关注Twitter账号</a></li>
+                        <li><a href="https://potatom.vercel.app/#" target="_blank">商务洽谈官方邮箱</a></li>
+                        <li><a href="https://potatom.vercel.app/#" target="_blank">技术支持官方邮箱</a>
+                        </li>
+                        <li><a href="https://potatom.vercel.app/#" target="_blank">管理员邮箱</a></li>
+                    </ul>
+                </div>
+
+                <div class="botmdiv" style="margin-right: 0px;float: right;width: 240px">
+                    <ul>
+                        <li class="li-title">订阅我们</li>
+                        <li>
+                            <di><input id="email" type="email" class="emailtxt" placeholder="输入您的邮箱进行订阅"></di>
+                            <div id="emsg" style="color:red;font-size:12px;display:none">邮箱地址错误，请重新输入</div>
+                        </li>
+                        <li style="margin-top: 10px;">
+                            <input id="emailbtn" type="button" value="邮箱订阅" style=" cursor: pointer;color: #FFFFFF;outline: none;font-family: PingFangSC-Regular;background: #007EE5;border-radius: 16px;border: none;width: 240px;height: 32px;font-size: 14px;text-align: center;">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sugok" class="alertmsg" style="display:none">
+        <div class="dyok">
+            <div class="show-box">
+                <div class="icon iconfont" style="font-size: 60px;line-height: 80px;color: #007EE5;text-align: center;">
+                    </div>
+                
+                    <div style="text-align: center;font-size: 16px;color: #333333;line-height: 24px;height: 24px;margin-top: 20px">
+                        反馈成功！</div>
+                
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div id="dyok" class="alertmsg" style="display:none">
+        <div class="dyok">
+            <div class="show-box">
+                <div class="icon iconfont" style="font-size: 60px;line-height: 80px;color: #007EE5;text-align: center;">
+                    </div>
+                <div style="text-align: center;font-size: 16px;color: #333333;line-height: 24px;height: 24px;margin-top: 20px">恭喜您，订阅成功</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dynook" class="alertmsg" style="display:none">
+        <div class="dyok">
+            <div class="show-box">
+                <div class="icon iconfont" style="font-size: 60px;line-height: 80px;color: #F04646;text-align: center;">
+                    </div>
+                <div style="text-align: center;font-size: 16px;color: #333333;line-height: 24px;height: 24px;margin-top: 20px">对不起，订阅失败</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ydynook" class="alertmsg" style="display:none">
+        <div class="dyok">
+            <div class="show-box">
+                <div class="icon iconfont" style="font-size: 60px;line-height: 80px;color: #F04646;text-align: center;">
+                    </div>
+                <div style="text-align: center;font-size: 16px;color: #333333;line-height: 24px;height: 24px;margin-top: 20px">对不起，订阅失败</div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- <script src="static/js/jquery-1.11.3. min.js"></script> -->
+<!-- <script src="static/js/wow.min.js"></script> -->
+<!-- <script src="static/js/common.js"></script> -->
+<!-- <script src="static/js/jquery.qrcode.min.js"></script> -->
+
+
+    
+    
+     
+
+
+</body></html>
